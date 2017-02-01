@@ -1,0 +1,101 @@
+body {
+  font-family: 'GFS Didot', serif;
+  font-size: 1.7em;
+  padding: 2em;
+  line-height: 150%;
+  color: #4e4e4e;
+  background: #ddd;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 2.3em;
+  }
+}
+
+.js-active {
+  background: #737373;
+  color: #e4e4e4;
+}
+
+#main {
+  position:  relative;
+  max-width: 800px;
+  /* margin: 0 auto; */
+}
+
+#countdown,
+#main-id {
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 70px;
+  opacity: 0.6;
+  font-family: sans-serif;
+}
+
+#countdown {
+  left: 0;
+  color: #635555;
+  margin: 0;
+}
+
+#quotes {
+  display: none;
+}
+
+#random,
+#pause {
+  position: fixed;
+  text-indent: -9999px;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 70px;
+  border: 0;
+  background: url(images/pause.png) no-repeat center center #d2d2d2;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #44434e;
+  text-transform: lowercase;
+  line-height: 70px;
+  cursor: pointer;
+}
+
+#random {
+  right: 0;
+  left: auto;
+  background: url(images/random.png) no-repeat center center #5a5a5a;
+  color: #fff;
+}
+
+.js-active #pause {
+  background: url(images/start.png) no-repeat center center #9a9a9a;
+}
+
+.resource {
+  position: fixed;
+  bottom: 70px;
+  right: 0;
+  text-align: right;
+  font-size: 16px;
+  padding-right: 10px;
+  height: 25px;
+}
+
+.resource a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  line-height: 1;
+}
