@@ -51,6 +51,8 @@ $(document).ready(function(){
 
     tencnt++;
 
+    document.location.hash = random;
+
     $("#countdown").text(tencnt);
     main.text(quotes.eq(random).text());
     mainId.text(random);
