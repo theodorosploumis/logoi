@@ -15,6 +15,14 @@ $(document).ready(function(){
   startTimer();
 
   // Random quote
+  $(window).keypress(function(e) {
+    if (e.keyCode === 0 || e.keyCode === 32) {
+      e.preventDefault();
+      random.click();
+    }
+  });
+
+  // Press random buttom
   random.click(function(){
     stopTimer();
     tencnt = 0;
